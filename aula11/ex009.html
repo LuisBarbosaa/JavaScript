@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que voce é?</title>
+</head>
+<body>
+    <h1>Conferindo sua nacionalidade</h1>
+    <label for="pais">Digite seu pais:</label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="enviar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function enviar(){
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var pais = (pais.value)
+            res.innerHTML = `<p>Atualmente você mora no <strong>${pais}</strong></p>`
+            if (pais == 'Brasil'){
+                res.innerHTML += `Voce é Brasileiro`
+            } else {
+                res.innerHTML += `Voce é estrangeiro`
+            }
+        }
+        
+    </script>
+</body>
+</html>
