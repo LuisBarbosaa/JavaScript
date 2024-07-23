@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Pratica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="num">Digite um numero (1 a 100):</label>
+                <input type="number" name="num" id="num">
+                <input type="button" value="adicionar" onclick="adicionar()">
+                <br>
+                <br>
+                <select name="entrada" id="entrada" size="6">
+
+                </select>
+                <br>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+        
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Video</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
